@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE HTML>
 <!--
 	Stellar by HTML5 UP
@@ -14,7 +15,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		
 	</head>
   <!----Google Sign in----->
   <script src="https://apis.google.com/js/client:platform.js?onload=renderButton" async defer></script>
@@ -47,7 +47,7 @@
   </body>
  <!--------------------> 
 </html>
-<html>
+	
 	<body>
 
 		<!-- Wrapper -->
@@ -89,7 +89,7 @@
 											
 										</ul>
 									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+									<span class="image"><img src="images/logo.png" alt="" /></span>
 								</div>
 							</section>
 
@@ -111,7 +111,6 @@
 								<footer class="major">
 									<ul class="actions">
 										<script>
-
 										function ajax_post(){
 											// Create our XMLHttpRequest object
 											var hr = new XMLHttpRequest();
@@ -147,6 +146,7 @@
 										</br>
 									</ul>
 								</footer>
+								
 							</section>
 
 						<!-- Second Section -->
@@ -158,7 +158,10 @@
 										<p id="result_val"></p>
 										<div id="results56"></div>
 									</body>
-									
+									<ul class="actions">
+										</br>
+										<li><a href="https://www.google.com/sheets/about/" class="button special">Export to Google Sheets</a></li>
+									</ul>
 								</header>
 								<p class="content">
 								</p>
