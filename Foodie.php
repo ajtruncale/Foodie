@@ -115,7 +115,7 @@
 											// Create our XMLHttpRequest object
 											var hr = new XMLHttpRequest();
 											// Create some variables we need to send to our PHP file
-											var url = "test_info.php";
+											var url = "request.php";
 											var nutValue = document.getElementById("nutValue").value;
 											//var ln = document.getElementById("last_name").value;
 											var vars = "maxCalories="+nutValue;
