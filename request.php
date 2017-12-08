@@ -25,12 +25,12 @@ array(
 	//Displays Results
 	for($i = 0;$i < count($json);$i++){
 		printf('<br>ID: %s <br>',$json[$i]->id);
-		printf('Title: %s <br>',$json[$i]->title);
+		printf('<h2>Title: %s <h2><br>',$json[$i]->title);
 		$image = $json[$i]->image;
 		$imageData = base64_encode(file_get_contents($image));
 		echo '<img src="data:image/jpeg;base64,'.$imageData.'">';
 		//printf('<br>Image: %s <br>',$json[$i]->image);
-		printf('Calories: %s <br>',$json[$i]->calories);
+		printf('<br>Calories: %s <br>',$json[$i]->calories);
 		printf('Protein: %s <br>',$json[$i]->protein);
 		printf('Fat: %s <br>',$json[$i]->fat);
 		printf('Carbs: %s <br>',$json[$i]->carbs);
