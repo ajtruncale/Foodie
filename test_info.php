@@ -4,7 +4,7 @@
 
 // These code snippets use an open-source library. http://unirest.io/php
 // The code below requests data from the Recipe - Food - Nutrition api @ https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByNutrients
-require_once '/src/Unirest.php';
+require_once 'src/Unirest.php';
 $response = \Unirest\Request::verifyPeer(false);
 //TODO: need to make this dynamic
 $maxCalories = $_POST['maxCalories'];
