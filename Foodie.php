@@ -57,7 +57,6 @@
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.png" alt="" width="150" height="150" /></span>
 						<h1>Foodie!!</h1>
-						<p>Foodie Description<br />
 						Template built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</header>
 
@@ -153,7 +152,6 @@
 							<section id="second" class="main special">
 								<header class="major">
 									<h2>Results</h2>
-									<body>Reuslts section...
 										<br />
 										<p id="result_val"></p>
 										<div id="results56"></div>
