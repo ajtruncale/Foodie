@@ -176,7 +176,6 @@
 								<header class="major">
 									<h2>Results</h2>
 									<body>
-										<br />
 										<p id="result_val"></p>
 										<div id="results56"></div>
 									</body>
