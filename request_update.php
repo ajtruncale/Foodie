@@ -30,7 +30,7 @@ array(
 	}
 	for($i = 0;$i < count($json);$i++){
 		//printf('<br>ID: %s <br>',$json[$i]->id);
-		printf('Title: %s <br>',$json[$i]->title);
+		printf('<h2>Title: %s </h2><br>',$json[$i]->title);
 		$image = $json[$i]->image;
 		$imageData = base64_encode(file_get_contents($image));
 		echo '<img src="data:image/jpeg;base64,'.$imageData.'">';
