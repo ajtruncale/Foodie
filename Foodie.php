@@ -47,7 +47,9 @@
   </body>
  <!--------------------> 
 </html>
+	
 	<body>
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -55,7 +57,6 @@
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.png" alt="" width="150" height="150" /></span>
 						<h1>Foodie!!</h1>
-						<p>
 						Template built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</header>
 
@@ -113,34 +114,10 @@
 											// Create our XMLHttpRequest object
 											var hr = new XMLHttpRequest();
 											// Create some variables we need to send to our PHP file
-											var url = "test_info.php";
-											var maxCal = 2000;
-											var maxPro = 100;
-											var maxFat = 100;
-											var maxCar = 250;
-											var minCal = 0;
-											var minPro = 0;
-											var minFat = 0;
-											var minCar = 0;
-											if(document.getElementById("type").value == "Calories"){
-												maxCal = document.getElementById("nutValue").value;
-												minCal = maxCal - 10;
-											}
-											if(document.getElementById("type").value == "Protein"){
-												maxPro = document.getElementById("nutValue").value;
-												minPro = maxPro - 10;
-											}
-											if(document.getElementById("type").value == "Fat"){
-												maxFat = document.getElementById("nutValue").value;
-												minFat = maxFat - 10;
-											}
-											if(document.getElementById("type").value == "Carbs"){
-												maxCar = document.getElementById("nutValue").value;
-												minCar = maxCar - 10;
-											}
-											
+											var url = "request.php";
+											var nutValue = document.getElementById("nutValue").value;
 											//var ln = document.getElementById("last_name").value;
-											var vars = "maxCalories="+maxCal+"&maxProtein="+maxPro+"&maxFat="+maxFat+"&maxCarbs="+maxCar+"&minCalories="+minCal+"&minProtein="+minPro+"&minFat="+minFat+"&minCarbs="+minCar;
+											var vars = "maxCalories="+nutValue;
 											hr.open("POST", url, true);
 											// Set content type header information for sending url encoded variables in the request
 											hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -161,8 +138,8 @@
 										<select name="uOpt" id="type">
 											<option value="Calories">Calories</option>
 											<option value="Protein">Protein</option>
-											<option value="Fat">Fat</option>
 											<option value="Carbs">Carbs</option>
+											<option value="Fat">Fat</option>
 										</select>
 										<input name="generate" type="submit" value="Generate" onclick="ajax_post();">
 										</br>
@@ -175,7 +152,6 @@
 							<section id="second" class="main special">
 								<header class="major">
 									<h2>Results</h2>
-									<body>
 										<br />
 										<p id="result_val"></p>
 										<div id="results56"></div>
